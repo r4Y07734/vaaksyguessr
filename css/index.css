@@ -8,7 +8,7 @@
 #text {
     font-weight: 700;
     font-size: 25px;
-    margin-left: 1vw;
+    margin-left: 30px;
     color: #ffffff;
 }
 
@@ -30,8 +30,8 @@
     text-decoration: none;
     border-color: #0000ff;
     border-radius: 20px;
-    width: 8vw;
-    margin-left: 1vw;
+    width: 160px;
+    margin-left: 20px;
     font-size: 25px;
     height: 40px;
     background: #4444ff;
@@ -48,9 +48,9 @@
     text-decoration: none;
     border-color: #0000ff;
     border-radius: 20px;
-    /*width: 9vw;*/
+    width: 160px;
     width: 0;
-    margin-left: 0.5vw;
+    margin-left: 15px;
     font-size: 25px;
     height: 40px;
     background: #4444ff;
@@ -85,24 +85,24 @@
 .box-2 {
     position: absolute;
     background: #212121;
-    bottom: 0;
-    left: 39vw;
-    width: 10vw;
-    height: 20vh;
+    top: 880px;
+    left: 740px;
+    width: 200px;
+    height: 200px;
     z-index: 1000;
 }
 
 .box img {
-    width: 39vw;
-    height: 45vh;
+    width: 740px;
+    height: 505px;
 }
 
 .box {
-    bottom: 0;
+    top: 575px;
     left: 0;
     position: absolute;
-    width: 39vw;
-    height: 45vh;
+    width: 740px;
+    height: 505px;
     background: #ffffff;
 }
 
