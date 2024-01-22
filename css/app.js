@@ -64,8 +64,9 @@ window.onload = function() {
     
 };*/
 
-var box = document.getElementById("mark");
-    addEventListener('click', function(event) {
+/*var box = document.getElementById("mark");
+    let map = document.getElementById("map")
+    map.addEventListener('click', function(event) {
     box.style.visibility="visible";
     box.style.left = event.pageX + 'px';
     box.style.top = event.pageY + 'px';
@@ -73,7 +74,26 @@ var box = document.getElementById("mark");
     sub.style.visibility = "visible";
     let bt = document.getElementById("next");
     bt.style.width = 9 + 'vw';
-}, { once: true });
+}/*, { once: true });*/
+
+document.body.addEventListener("click", function(event) {
+    let guess = document.getElementById("mark");
+    let check = document.getElementById("btn");
+    
+if (event.target.id != "box-2" && event.target.id != "box" && event.target.id != "text" && event.target.id != "btn") {
+    //console.log(event.target.id);
+    //console.log(event.pageY, ", ", event.pageX);           
+    //gue.style.width = window.innerWidth / 1920 * 20 + 'px';
+    guess.style.visibility = "visible";
+    guess.style.top = event.pageY + "px";
+    guess.style.left = event.pageX + "px";
+    //guess.style.top = event.pageY - map.offsetHeight / 1080 * gue.offsetHeight + 'px';
+    //guess.style.left = event.pageX - map.offsetWidth / 1920 * 10 + 'px';
+    check.style.visibility = "visible";
+
+    //console.log("click: " + event.pageX + ", " + event.pageY);
+}
+});
 
 let button = document.getElementById("btn");
 
