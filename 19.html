@@ -11,17 +11,17 @@
 
         <style>
             #fs {
-                top: 459px;
-                left: 1432px;
+                top: 559px;
+                left: 1075px;
             }
         </style>
     </head>
     <body>
-        <div id="marker"><div id="mark"></div></div>
+        <div id="mark"></div>
 
         <div id="fs"></div>
 
-        <div class="box-2">
+        <div id="box-2" class="box-2">
             <a id="text">Your score: 0</a><br>
             <button id="btn">Submit</button><br>
             <a href="20.html">
@@ -29,13 +29,19 @@
             </a>
         </div>
 
-        <div class="box">
-            <img src="19.jpg">
+        <div id="box" class="box">
+            <img id="box" draggable="false" src="19.jpg">
         </div>
 
         <div class="map">
-            <img draggable="false" src="images/map.png">
+            <img id="map" draggable="false" src="images/map.png">
+            <!--<iframe src="https://asiointi.maanmittauslaitos.fi/karttapaikka/" height="1080px" width1920px=""></iframe>-->
         </div>
+        <!--<script>
+            window.onload = function() {
+                localStorage.setItem("storageName", "0");
+            };
+        </script>-->
         <script src="css/app.js"></script>
     </body>
 </html>
