@@ -80,19 +80,19 @@ document.body.addEventListener("click", function(event) {
     let guess = document.getElementById("mark");
     let check = document.getElementById("btn");
     
-if (event.target.id != "box-2" && event.target.id != "box" && event.target.id != "text" && event.target.id != "btn") {
-    //console.log(event.target.id);
-    //console.log(event.pageY, ", ", event.pageX);           
-    //gue.style.width = window.innerWidth / 1920 * 20 + 'px';
-    guess.style.visibility = "visible";
-    guess.style.top = event.pageY + "px";
-    guess.style.left = event.pageX + "px";
-    //guess.style.top = event.pageY - map.offsetHeight / 1080 * gue.offsetHeight + 'px';
-    //guess.style.left = event.pageX - map.offsetWidth / 1920 * 10 + 'px';
-    check.style.visibility = "visible";
-
-    //console.log("click: " + event.pageX + ", " + event.pageY);
-}
+    if (event.target.id != "box-2" && event.target.id != "box" && event.target.id != "text" && event.target.id != "btn") {
+        //console.log(event.target.id);
+        //console.log(event.pageY, ", ", event.pageX);           
+        //gue.style.width = window.innerWidth / 1920 * 20 + 'px';
+        guess.style.visibility = "visible";
+        guess.style.top = event.pageY + "px";
+        guess.style.left = event.pageX + "px";
+        //guess.style.top = event.pageY - map.offsetHeight / 1080 * gue.offsetHeight + 'px';
+        //guess.style.left = event.pageX - map.offsetWidth / 1920 * 10 + 'px';
+        check.style.visibility = "visible";
+    
+        console.log("click: " + event.pageX + ", " + event.pageY);
+    }
 });
 
 let button = document.getElementById("btn");
@@ -124,12 +124,12 @@ button.addEventListener("click", () => {
     }*/
     var distance = Math.sqrt(dis);
 
-    if (Math.round(distance) > 25) {
+    if (Math.round(distance) > 15) {
         distance = 0;
     } else if (Math.round(distance) <= 3) {
-        distance = 25
+        distance = 15
     } else {
-        distance = 25 - distance
+        distance = 15 - distance
     }
 
     distance = Math.round(parseInt(localStorage.getItem("storageName")) + distance)
